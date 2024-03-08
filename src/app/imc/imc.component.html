@@ -3,12 +3,13 @@
   <div class="row">
     <div class="row">
       <label for="">Weight in KG:</label>
-      <input type="text" [(ngModel)]="weight" class="form-control" placeholder="(example: 85)" />
+      <input type="text"  class="form-control" placeholder="(example: 85)" [(ngModel)]="weight" name="weight" />
     </div>
     <div class="row">
       <label for="">Height in meters:</label>
-      <input type="text" [(ngModel)]="height" class="form-control" placeholder="(example: 1.80)" />
+      <input type="text" class="form-control" [(ngModel)]="height"  name="height" placeholder="(example: 1.80)" />
     </div>
-    <button class="btn">Calculate</button>
+    <button (click)="calculate()" class="btn">Calculate</button>
+    {{result}}
   </div>
 </form>
