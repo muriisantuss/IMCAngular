@@ -36,6 +36,7 @@ export class IMCComponent {
         break;
       case this.result < 26.9:
         this.description = 'Overweight grade I';
+        
         break;
       case this.result < 29.9:
         this.description = 'Overweight grade II (pre-obesity)';
@@ -53,6 +54,10 @@ export class IMCComponent {
         this.description = 'Type VI obesity (extreme)';
         break;
       case this.height == null || this.weight == null:
+        document.getElementById('desc')?.classList.remove('hidden');
+        this.description = 'Please enter both numbers';
+        return;
+        case this.height == 0 || this.weight == 0:
         document.getElementById('desc')?.classList.remove('hidden');
         this.description = 'Please enter both numbers';
         return;

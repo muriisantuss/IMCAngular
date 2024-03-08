@@ -24,8 +24,8 @@
       </div>
     </article>
 
-    <section class="d-flex justify-content-center align-items-center gap-3">
-      <form class="form col-xs-6">
+    <section class="form d-flex justify-content-center align-items-center">
+      <form class="col-xs-6 col-md-6">
         <div>
           <div class="row w-75 mx-auto">
             <label class="mt-2 fw-bolder">Weight in KG:</label>
@@ -62,20 +62,18 @@
           </div>
         </div>
       </form>
-      <div class="col-xs-6 text-center">
+      <div class="col-xs-6 col-md-6 text-center">
         <img
-          src="./src/assets/image.png"
-          class="img-responsive"
+          src="../assets/image.png"
+          class="img-responsive rounded img-fluid"
           alt="Responsive image"
-        />
-        <img
-          src="/src/assets/image.png"
-          class="rounded"
-          alt="Descrição significativa da imagem"
         />
       </div>
     </section>
-    <p id="desc" class="hidden fw-bolder text-center mx-auto mt-3 w-50 attention">
+    <p
+      id="desc"
+      class="hidden fw-bolder text-center mx-auto mt-3 w-50 attention"
+    >
       {{ description }}
     </p>
     <p id="result" class="hidden text-center mx-auto mt-3 w-50">
