@@ -1,51 +1,94 @@
-<main class="container  bg-danger d-flex justify-content-center align-items-center" >
-<form class="form w-50 row">
-  <h1 class="text-center">Calculator - IMC</h1>
-  <div>
-    <div class="row w-50 mx-auto">
-      <label class="mt-2">Weight in KG:</label>
-      <input
-        type="text"
-        [maxLength]="5"
-        currencyMask
-        [options]="{}"
-        class="form-control"
-        placeholder="(example: 85)"
-        [(ngModel)]="weight"
-        name="weight"
-      />
-    </div>
+<main class="hv-100 mx-auto">
+  <section class="w-100 mx-auto">
+    <article>
+      <header>
+        <h1 class="text-center mt-2 mb-0">Calculator - IMC</h1>
+        <p class="text-center">Saiba as funcionalides de uma calculadora imc</p>
+      </header>
 
-    <div class="row w-50 mx-auto" >
-      <label class="mt-2">Height in meters:</label>
-      <input
-        maxlength="3"
-        type="text"
-        class="form-control"
-        currencyMask
-        [options]="{}"
-        [(ngModel)]="height"
-        name="height"
-        placeholder="(example: 1.80)"
-      />
-    </div>
-    <button (click)="calculate()" class="btn">Calculate</button>
-    <p id="result" class="hidden">
-      For a weight of <strong>{{ weight.toLocaleString('pt-BR', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }) }}</strong> kilograms and a height of
+      <div>
+        <h3>Title of Article Test</h3>
+        <p>
+          The <strong>Body Mass Index (BMI)</strong> is a measure used to
+          classify an individual's weight status. It is calculated using the
+          formula: <strong>weight</strong> (kg) / <strong>height</strong> (m^2).
+          This formula is applicable to both men and women and is specifically
+          designed for adults.
+        </p>
+
+        <p>
+          To obtain accurate measurements, it is recommended to
+          <strong>weigh oneself</strong> in the morning on an empty bladder and
+          rectum, while fasting and wearing only underwear. Inp
+        </p>
+      </div>
+    </article>
+
+    <section class="d-flex justify-content-center align-items-center gap-3">
+      <form class="form col-xs-6 bg-danger wrapper">
+        <div>
+          <div class="row w-75 mx-auto">
+            <label class="mt-2 fw-bolder">Weight in KG:</label>
+            <input
+              type="text"
+              [maxLength]="5"
+              currencyMask
+              [options]="{}"
+              class="form-control"
+              placeholder="(example: 85)"
+              [(ngModel)]="weight"
+              name="weight"
+            />
+          </div>
+
+          <div class="row w-75 mx-auto">
+            <label class="mt-2 fw-bolder">Height in meters:</label>
+            <input
+              maxlength="3"
+              type="text"
+              class="form-control"
+              currencyMask
+              [options]="{}"
+              [(ngModel)]="height"
+              name="height"
+              placeholder="(example: 1.80)"
+            />
+            <button (click)="calculate()" class="btn btn-danger mt-3">
+              Calculate
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="col-xs-6 bg-danger text-center">
+        <img
+          src="./src/assets/image.png"
+          class="img-responsive"
+          alt="Responsive image"
+        />
+        <img
+          src="/src/assets/image.png"
+          class="rounded"
+          alt="Descrição significativa da imagem"
+        />
+      </div>
+    </section>
+    <p id="result" class="hidden text-center mx-auto mt-3 w-50">
+      For a weight of
+      <strong>{{ weight.toLocaleString('pt-BR', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+}) }}</strong>
+      kilograms and a height of
       <strong>{{ height.toLocaleString('pt-BR', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      }) }}</strong>
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+}) }}</strong>
       meters, his IMC/BMI is:
       <strong>{{ result }}</strong>
 
       You are in the group: <strong>{{ description }}</strong>
+      <br />
+      <span class="mx-auto text-center"> <i class="bi bi-star-fill"></i> </span>
     </p>
-  </div>
-  <i class="text-center bi bi-star-fill"></i>
-</form>
-<div class="col bg-danger hidden"></div>
+  </section>
 </main>
