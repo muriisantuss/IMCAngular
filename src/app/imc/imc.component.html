@@ -1,8 +1,9 @@
-<form class="container">
-  <h1>Calculator - IMC</h1>
-  <div class="row">
-    <div class="row">
-      <label>Weight in KG:</label>
+<main class="container  bg-danger d-flex justify-content-center align-items-center" >
+<form class="form w-50 row">
+  <h1 class="text-center">Calculator - IMC</h1>
+  <div>
+    <div class="row w-50 mx-auto">
+      <label class="mt-2">Weight in KG:</label>
       <input
         type="text"
         [maxLength]="5"
@@ -15,12 +16,12 @@
       />
     </div>
 
-    <div class="row">
-      <label>Height in meters:</label>
+    <div class="row w-50 mx-auto" >
+      <label class="mt-2">Height in meters:</label>
       <input
         maxlength="3"
         type="text"
-        class="form-control col"
+        class="form-control"
         currencyMask
         [options]="{}"
         [(ngModel)]="height"
@@ -44,4 +45,7 @@
       You are in the group: <strong>{{ description }}</strong>
     </p>
   </div>
+  <i class="text-center bi bi-star-fill"></i>
 </form>
+<div class="col bg-danger hidden"></div>
+</main>
