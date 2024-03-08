@@ -9,37 +9,42 @@ export class IMCComponent {
   weight: any;
   height: any;
   result: any;
+  description: string = '';
 
   calculate() {
     this.result = this.weight / (this.height * this.height);
 
+
     switch (true) {
       case this.result < 18.5:
-        alert('Insufficient Weight');
+        this.description = 'Insufficient Weight';
         break;
       case this.result < 24.9:
-        alert('Normal weight');
+        this.description = 'Normal weight';
         break;
       case this.result < 26.9:
-        alert('Overweight grade I');
+        this.description = 'Overweight grade I';
         break;
       case this.result < 29.9:
-        alert('Overweight grade II (pre-obesity)');
+        this.description = 'Overweight grade II (pre-obesity)';
         break;
       case this.result < 34.9:
-        alert('Type I obesity');
+        this.description = 'Type I obesity';
         break;
       case this.result < 39.9:
-        alert('Type II obesity');
+        this.description = 'Type II obesity';
         break;
       case this.result < 49.9:
-        alert('Type III obesity (morbid)');
+        this.description = 'Type III obesity (morbid)';
         break;
       case this.result > 50:
-        alert('Type VI obesity (extreme)');
+        this.description = 'Type VI obesity (extreme)';
         break;
       default:
         break;
     }
+
+    this.result = this.result.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2,});
+    document.getElementById('result')?.classList.remove('hidden');
   }
 }

@@ -10,6 +10,8 @@
       <input type="text"[maxLength]="4" class="form-control" [(ngModel)]="height"  name="height" placeholder="(example: 1.80)" />
     </div>
     <button (click)="calculate()" class="btn">Calculate</button>
-    {{result}}
+    <p id="result" class="hidden">For a weight of <strong>{{weight}}</strong> kilograms and a height of <strong>{{height}}</strong> meters, his IMC/BMI is: <strong>{{result}}</strong>
+
+      You are in the group: <strong>{{description}}</strong></p>
   </div>
 </form>
