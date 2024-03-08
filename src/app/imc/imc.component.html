@@ -3,11 +3,11 @@
   <div class="row">
     <div class="row">
       <label for="">Weight in KG:</label>
-      <input type="text"  class="form-control" placeholder="(example: 85)" [(ngModel)]="weight" name="weight" />
+      <input type="text" [maxLength]="5" class="form-control" placeholder="(example: 85)" [(ngModel)]="weight" name="weight" />
     </div>
     <div class="row">
       <label for="">Height in meters:</label>
-      <input type="text" class="form-control" [(ngModel)]="height"  name="height" placeholder="(example: 1.80)" />
+      <input type="text"[maxLength]="4" class="form-control" [(ngModel)]="height"  name="height" placeholder="(example: 1.80)" />
     </div>
     <button (click)="calculate()" class="btn">Calculate</button>
     {{result}}
