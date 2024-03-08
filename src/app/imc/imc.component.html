@@ -1,17 +1,47 @@
 <form class="container">
-  <h1>Calculator - IMC </h1>
+  <h1>Calculator - IMC</h1>
   <div class="row">
     <div class="row">
-      <label for="">Weight in KG:</label>
-      <input type="text" [maxLength]="5" class="form-control" placeholder="(example: 85)" [(ngModel)]="weight" name="weight" />
+      <label>Weight in KG:</label>
+      <input
+        type="text"
+        [maxLength]="5"
+        currencyMask
+        [options]="{}"
+        class="form-control"
+        placeholder="(example: 85)"
+        [(ngModel)]="weight"
+        name="weight"
+      />
     </div>
+
     <div class="row">
-      <label for="">Height in meters:</label>
-      <input type="text"[maxLength]="4" class="form-control" [(ngModel)]="height"  name="height" placeholder="(example: 1.80)" />
+      <label>Height in meters:</label>
+      <input
+        maxlength="3"
+        type="text"
+        class="form-control col"
+        currencyMask
+        [options]="{}"
+        [(ngModel)]="height"
+        name="height"
+        placeholder="(example: 1.80)"
+      />
     </div>
     <button (click)="calculate()" class="btn">Calculate</button>
-    <p id="result" class="hidden">For a weight of <strong>{{weight}}</strong> kilograms and a height of <strong>{{height}}</strong> meters, his IMC/BMI is: <strong>{{result}}</strong>
+    <p id="result" class="hidden">
+      For a weight of <strong>{{ weight.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }) }}</strong> kilograms and a height of
+      <strong>{{ height.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }) }}</strong>
+      meters, his IMC/BMI is:
+      <strong>{{ result }}</strong>
 
-      You are in the group: <strong>{{description}}</strong></p>
+      You are in the group: <strong>{{ description }}</strong>
+    </p>
   </div>
 </form>

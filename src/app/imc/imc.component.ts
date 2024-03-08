@@ -11,9 +11,11 @@ export class IMCComponent {
   result: any;
   description: string = '';
 
+
+
+
   calculate() {
     this.result = this.weight / (this.height * this.height);
-
 
     switch (true) {
       case this.result < 18.5:
@@ -44,7 +46,10 @@ export class IMCComponent {
         break;
     }
 
-    this.result = this.result.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2,});
+    this.result = this.result.toLocaleString('pt-BR', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
     document.getElementById('result')?.classList.remove('hidden');
   }
 }
