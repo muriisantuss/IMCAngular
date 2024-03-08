@@ -2,8 +2,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-strong {
-}
 
 main {
   width: 50%;
@@ -12,6 +10,14 @@ main {
 
 .hidden {
   display: none;
+}
+
+.attention{
+  color: #dc2626;
+}
+
+.normal{
+  color: #16a34a;
 }
 
 @media screen and (max-width: 1124px) {

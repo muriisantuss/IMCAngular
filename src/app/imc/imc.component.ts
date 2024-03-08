@@ -11,11 +11,17 @@ export class IMCComponent {
   result: any;
   description: string = '';
 
-
-
-
   calculate() {
     this.result = this.weight / (this.height * this.height);
+
+    var sg = document.querySelectorAll('strong');
+
+    sg.forEach(function (element) {
+      element.classList.remove('attention');
+      element.classList.add('attention');
+    });
+
+    document.getElementById('desc')?.classList.add('hidden');
 
     switch (true) {
       case this.result < 18.5:
@@ -23,6 +29,10 @@ export class IMCComponent {
         break;
       case this.result < 24.9:
         this.description = 'Normal weight';
+        sg.forEach(function (element) {
+          element.classList.remove('attention');
+          element.classList.add('normal');
+        });
         break;
       case this.result < 26.9:
         this.description = 'Overweight grade I';
@@ -42,6 +52,10 @@ export class IMCComponent {
       case this.result > 50:
         this.description = 'Type VI obesity (extreme)';
         break;
+      case this.height == null || this.weight == null:
+        document.getElementById('desc')?.classList.remove('hidden');
+        this.description = 'Please enter both numbers';
+        return;
       default:
         break;
     }
