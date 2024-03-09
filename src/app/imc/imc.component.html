@@ -3,11 +3,11 @@
     <article>
       <header>
         <h1 class="text-center mt-2 mb-0 fw-bolder">Calculator - IMC</h1>
-        <p class="text-center">Saiba as funcionalides de uma calculadora imc</p>
+        <p class="text-center">Learn more about the features of an imc calculator</p>
       </header>
 
       <div>
-        <h3>Title of Article Test</h3>
+        <h3>Exploring weight through the BMI formula:</h3>
         <p>
           The <strong>Body Mass Index (BMI)</strong> is a measure used to
           classify an individual's weight status. It is calculated using the
@@ -46,7 +46,7 @@
             <input
               maxlength="3"
               type="text"
-              class="form-control"
+              class="form-control "
               currencyMask
               [options]="{}"
               [(ngModel)]="height"
@@ -63,16 +63,22 @@
         </div>
       </form>
       <div class="col-xs-6 col-md-6 text-center">
-        <img
-          src="../assets/image.png"
-          class="img-responsive rounded img-fluid"
-          alt="Responsive image"
-        />
+        <div
+          class="embed-responsive embed-responsive-1by1"
+          style="max-width: 250px; max-height: 250px"
+        >
+          <img
+            id="img"
+            [src]="imagePath"
+            class="img-responsive rounded embed-responsive-item img-fluid"
+            alt="Responsive image"
+          />
+        </div>
       </div>
     </section>
     <p
       id="desc"
-      class="hidden fw-bolder text-center mx-auto mt-3 w-50 attention"
+      class="hidden fw-bolder text-center mx-auto mt-3 w-50 red"
     >
       {{ description }}
     </p>

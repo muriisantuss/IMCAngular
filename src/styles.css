@@ -2,3 +2,28 @@
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+.red {
+  color: #dc2626;
+}
+.green {
+  color: #16a34a;
+}
+.purple{
+  color: #592E83;
+}
+.yellow{
+  color:#D3D52F
+}
+.blue{
+  color: #00b4d8;
+}
+.orange{
+  color: #e85d04;
+}
+.gray{
+  color:#6c757d;
+}
+.brown{
+  color:#5e503f;
+}
+
