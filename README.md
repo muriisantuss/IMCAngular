@@ -13,10 +13,11 @@
   
   <strong>
   <a href="#-sobre-o-projeto">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar-o-projeto">Execução do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#autor">Autor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-autor">Autor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
     </strong>
 </p>
@@ -27,16 +28,19 @@ Este projeto consiste em uma calculadora de Índice de Massa Corporal (IMC) dese
 e o framework de estilo Bootstrap. A calculadora não apenas calcula o IMC com base no peso e altura inseridos pelo usuário,
 mas também fornece uma experiência interativa ao exibir imagens ilustrativas que mudam de acordo com o resultado do IMC.
 
-### 🖼️ Layout
 
+### 📱 Layout
 <p align="center">
 <img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/ca73aa8a-84af-4bb3-a633-a6cf4c7a70f1" alt="NormalWeight" min-width="100px" max-width="300px" width="300px"/>
 <img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/599765fd-1665-4b97-b782-9c84aff5dc3d" alt="Insufficient Weight" min-width="100px" max-width="300px" width="300px"/>
 </p
+  
+   
+   Acesse o site através deste link:  **[Website](https://imc-angular-rosy.vercel.app/)**
+
 
 
 ### 🔧 Instalação
-
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
@@ -80,7 +84,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Node.js 20.9.0](https://nodejs.org/en)**
 - **[Bootstrap](https://ng-bootstrap.github.io/#/home)**
 
-### ✒️ Autor
+### 📖 Autor
 
 <div style="overflow: hidden;">
   <a  href="https://github.com/muriisantuss">
