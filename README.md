@@ -30,14 +30,8 @@ mas também fornece uma experiência interativa ao exibir imagens ilustrativas q
 ### 🖼️ Layout
 
 <p align="center">
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/6dfe2cd7-1c16-45d7-aad3-5f353f48659a" alt="1" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/0dba795e-3515-4515-99ab-a0b1359204a2" alt="2" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/61597119-3ae6-4f9e-b2fd-4202a6ab105b" alt="3" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/ae538ca4-8a28-4102-bfea-d1150dee92c4" alt="4" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/df1c1e42-36c3-44f1-b13f-5fd9a0aca50d" alt="5" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/7769bb0b-8779-4fea-9e9d-c94eae871e8d" alt="6" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/e2bbe078-1a4d-4d9d-9253-faaedae986bf" alt="7" min-width="100px" max-width="300px" width="225px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/d915211e-d970-49fb-a420-66fd9ef43cc3" alt="8" min-width="100px" max-width="300px" width="225px"/>
+<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/f652cf05-dffd-40a5-a2fc-ff3541b0a520" alt="NormalWeight" min-width="100px" max-width="300px" width="500px"/>
+<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/495bb4c7-a2f2-456f-b535-155894ed0dfb" alt="Insufficient Weight" min-width="100px" max-width="300px" width="500px"/>
 </p>
 
 ### 🔧 Instalação
