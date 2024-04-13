@@ -30,8 +30,8 @@ mas também fornece uma experiência interativa ao exibir imagens ilustrativas q
 ### 🖼️ Layout
 
 <p align="center">
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/ca73aa8a-84af-4bb3-a633-a6cf4c7a70f1" alt="NormalWeight" min-width="100px" max-width="300px" width="500px"/>
-<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/599765fd-1665-4b97-b782-9c84aff5dc3d" alt="Insufficient Weight" min-width="100px" max-width="300px" width="500px"/>
+<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/ca73aa8a-84af-4bb3-a633-a6cf4c7a70f1" alt="NormalWeight" min-width="100px" max-width="300px" width="300px"/>
+<img src="https://github.com/muriisantuss/IMCAngular/assets/151096774/599765fd-1665-4b97-b782-9c84aff5dc3d" alt="Insufficient Weight" min-width="100px" max-width="300px" width="300px"/>
 </p
 
 
