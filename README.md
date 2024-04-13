@@ -53,7 +53,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### 🎲 Como executar o projeto
 
-Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento do Angular para visualizar o currículo no navegador.
+Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento do Angular para visualizar o website no navegador.
 
 1. Navegue até o diretório do projeto:
    ```bash
@@ -70,7 +70,7 @@ Após a instalação das dependências, você pode iniciar o servidor de desenvo
    ng serve -o
    ```
 
-Isso abrirá automaticamente o seu navegador padrão e carregará o currículo. Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador.
+Isso abrirá automaticamente o seu navegador padrão e carregará o website. Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador.
 
 ### 🛠 Tecnologias
 
